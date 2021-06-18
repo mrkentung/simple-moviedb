@@ -5,7 +5,7 @@ const CardMovie = ({
   handleClickImage,
   handleClickTitle,
 }) => (
-  <div className="relative">
+  <div className="relative" data-testid="card">
     <img
       src={imgUrl}
       className="mb-4 rounded-sm cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"

@@ -5,7 +5,10 @@ const Search = ({
 }) => {
   const renderSuggestions = (list) => {
     return (
-      <div className="bg-white shadow w-full z-10 absolute top-12 min-h-full">
+      <div
+        className="bg-white shadow w-full z-10 absolute top-12 min-h-full"
+        data-testid="search"
+      >
         {list.data.map((item, idx) => {
           if (item) {
             return (

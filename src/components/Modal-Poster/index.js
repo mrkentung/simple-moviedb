@@ -9,6 +9,7 @@ const ModalPoster = ({ isOpen, handleClose, imgUrl }) => {
       open={isOpen}
       onClose={() => handleClose(false)}
       initialFocus={initialFocusRef}
+      data-testid="modal-poster"
     >
       <Dialog.Overlay className="fixed inset-0 bg-opacity-75 bg-gray-500" />
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none">

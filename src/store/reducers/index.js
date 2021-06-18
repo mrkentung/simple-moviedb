@@ -4,9 +4,9 @@ import moviesBySearchReducer from './movie-search'
 import { combineReducers } from 'redux'
 
 const combinedReducers = combineReducers({
-    movies: moviesReducer,
-    moviesById: moviesByIdReducer,
-    moviesBySearch: moviesBySearchReducer
+  movies: moviesReducer,
+  moviesById: moviesByIdReducer,
+  moviesBySearch: moviesBySearchReducer,
 })
 
 export default combinedReducers

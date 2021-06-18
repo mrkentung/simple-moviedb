@@ -9,6 +9,15 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-watch": "^7.0.0",
+    "prettier": "^2.3.1",
     "react": "^17.0.2",
     "react-autosuggest": "^10.1.0",
     "react-content-loader": "^6.0.3",
@@ -25,7 +34,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . -c .eslintrc.js --fix",
+    "lint:watch": "esw --watch . -c .eslintrc.js --fix"
   },
   "eslintConfig": {
     "extends": [

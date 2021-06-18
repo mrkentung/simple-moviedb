@@ -1,7 +1,7 @@
 import ContentLoader from 'react-content-loader'
 
 const ContentSekeleton = (props) => (
-    <ContentLoader
+  <ContentLoader
     className="w-full"
     viewBox="0 0 300 178"
     backgroundColor="#f0f0f0"

@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './styles/index.css'
+import App from './App'
 import { createStore, applyMiddleware, compose } from 'redux'
 import combinedReducers from './store/reducers'
 import { Provider } from 'react-redux'
@@ -16,7 +16,6 @@ const composeEnhancers =
 const enhancer = composeEnhancers(applyMiddleware(thunk))
 
 const store = createStore(combinedReducers, enhancer)
-  
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,5 +23,5 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById('root'),
+)
